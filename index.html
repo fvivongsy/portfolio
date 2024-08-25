@@ -1,429 +1,562 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="light" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Felix Vivongsy</title>
+    <title>Felix Vivongsy's Engineering Portfolio</title>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "Engineering Portfolio",
+            "url": "https://felixvivongsy.com"
+        }
+    </script>
     <link rel="icon" type="image/png" sizes="385x342" href="assets/img/Logo.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
 </head>
 
-<body style="color: rgba(33,37,41,0.28);">
-    <nav class="navbar navbar-light navbar-expand-md sticky-top border-dark shadow-sm" style="background-color: rgb(250,250,250);color: #ffffff;padding-left: 20px;">
-        <div class="container-fluid">
-            <div class="container"><a class="navbar-brand" href="#" style="color: #000000;">Felix Vivongsy</a>
-                <div class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#experience" style="color: #191414;">Experience</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#projects" style="color: #191414;">Projects</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#certifications" style="color: #191414;">Certifications</a></li>
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav" style="background: linear-gradient(85deg, rgba(36,40,44,0.23) 0%, rgba(34,38,42,0.78) 24%, rgba(34,38,42,0.93) 42%, rgb(33,37,41) 100%), rgba(255,255,255,0.3);">
+        <div class="container"><a class="navbar-brand" href="#page-top" style="font-family: cabin sketch;"><img src="assets/img/Logo.png" style="width: 10%;"></a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto text-uppercase">
+                    <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="#about" style="color: rgb(255,255,255);">EXPERIENCE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">PROJECTS</a></li>
+                </ul>
+            </div><a href="www.linkedin.com/in/fvivongs"><i class="fa fa-linkedin-square" style="font-size: 35px;color: rgb(255,255,255);padding-left: 10px;"></i></a>
+        </div>
+    </nav><!-- <header class="masthead" style="background-image: url('assets/img/Sample_Cover.gif');">
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in"><span style="font-size: 20px;"><strong>Mechanical Engineering Portfolio</strong></span></div>
+            <div class="intro-heading text-uppercase"><span>Felix Vivongsy</span></div>
+        </div>
+    </div>
+</header> -->
+
+<style>
+    header.masthead {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place video behind other content */
+  overflow: hidden;
+}
+
+#background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure video covers the background */
+}
+
+.container {
+  position: relative;
+  z-index: 1; /* Ensure text is above the video */
+}
+</style>
+
+<header class="masthead">
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="assets/img/cover.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in"><span style="font-size: 20px;"><strong>Mechanical Engineering Portfolio</strong></span></div>
+            <div class="intro-heading text-uppercase"><span>Felix Vivongsy</span></div>
+        </div>
+    </div>
+</header>
+    <section style="padding-top: 50px;padding-bottom: 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xl-2" style="margin-bottom: 10px;text-align: center;"><img src="assets/img/IMG_20230525_084929_839.jpg" style="width: 100%;border-radius: 10px;">
+                    <p style="font-size: 12px;text-align: center;">Yellowstone National Park,<br>Norris Geyser Basin,<br>Wyoming</p>
+                </div>
+                <div class="col-xl-10">
+                    <h3 class="text-muted section-subheading" style="text-align: left;margin-bottom: 0px;">Hi there! Welcome to my Engineering Portfolio! I'm Felix.<br><br>I'm a passionate engineer with a background in Mechanical Engineering. My journey began as a child, when I first started building with Legos. This early fascination with creating things sparked a lifelong dedication to designing and building products that have a meaningful impact—whether by helping others or providing entertainment.<br><br>Throughout my career, I've had the opportunity to work on full-stack software applications, challenge industry design standards, and develop manufacturing equipment for some of the most innovative automotive products. These experiences have provided me with a strong foundation in mechanical design, control logic, troubleshooting, communication, and manufacturing.<br><br>I pride myself on my ability to understand business needs at a strategic level and collaborate effectively with cross-functional teams to overcome challenging objectives. Whether I'm troubleshooting equipment, designing a component, or writing documentation, I always strive to understand the value of each task and approach my work with a strong sense of ownership.<br><br><span style="color: var(--bs-secondary-color);">Outside of work, I enjoy exploring, diving into personal projects, learning about financial markets, going to the gym and eating food. This helps me stay creative and balanced, bringing fresh ideas into my engineering projects.</span><br><br><span style="color: var(--bs-secondary-color);">Thank you for visiting my portfolio! I'm excited to share my work with you, and I look forward to connecting with others who are passionate about engineering. Please feel free to reach out if you'd like to discuss my projects, collaborate, or just chat about all things engineering.</span><br><br></h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style="padding-bottom: 75px;text-align: center;">
+                <div class="col"><img src="assets/img/PhaseTimeline.png" style="width: 98%;"></div>
+            </div>
+        </div>
+    </section>
+    <section id="about" style="padding-top: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">EXPERIENCE</h2>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 75px;padding-left: 18%;padding-right: 18%;text-align: center;">
+                <div class="col" style="text-align: center;padding-bottom: 1%;"><img src="assets/img/2024-08-17%2009_12_12-Publication2%20-%20Publisher.png" style="width: 80%;"></div>
+                <div class="col" style="text-align: center;padding-bottom: 1%;"><img src="assets/img/2024-08-17%2009_14_50-Publication2%20-%20Publisher.png" style="width: 80%;"></div>
+                <div class="col" style="text-align: center;padding-bottom: 1%;"><img src="assets/img/2024-08-17%2009_26_23-Publication2%20-%20Publisher.png" style="width: 80%;"></div>
+                <div class="col" style="text-align: center;padding-bottom: 1%;"><img src="assets/img/2024-08-17%2009_24_19-Publication2%20-%20Publisher.png" style="width: 80%;"></div>
+                <div class="col" style="text-align: center;padding-bottom: 1%;"><img src="assets/img/2024-08-17%2009_22_10-Publication2%20-%20Publisher.png" style="width: 80%;"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-group timeline">
+                        <li class="list-group-item">
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/Resized_20220804_172124.jpeg"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="time-title" style="font-size: 15px;">SEP 2023 - PRESENT</h4>
+                                    <h4 class="subheading" style="color: rgb(0,0,0);font-size: 20px;">Tesla - Mechanical Design Engineer</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Joined the Collision Tooling and Equipment team in Fremont, California. Designed fixtures for service part production, established standards for tooling validations, and developed equipment to improve repairability of all products with a focus on enhancing collision repair efficiency through cycle time reduction, lowering labor costs, improving safety, and increasing throughput.<br><br></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item timeline-inverted">
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/Resized_20230430_211104.jpeg"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 style="font-size: 15px;">MAY 2022 - SEP 2023</h4>
+                                    <h4 class="subheading" style="font-size: 20px;">Tesla - Manufacturing Engineer</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Relocated to Austin, Texas to support the production ramp for Model Y and Cybertruck on the Drive Unit Rotor team. Primarily led operations for High-Pressure Die Cast Machines and gained extensive experience with interference press, assembly, balancing, 6-axis robots, servo gantries, forming, laser etching, vision inspection, and machining. Collaborated closely with vendors to establish on-site equipment, troubleshoot issues, and publish documentation for maintenance and production procedures. Additionally, spearheaded electromechanical design improvements to enhance equipment performance.<br><br></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/Factory.png"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 style="font-size: 15px;">MAR 2021 - MAY 2022</h4>
+                                    <h4 class="subheading" style="font-size: 20px;">Tesla - Associate Manufacturing Engineer</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Joined GFNV in Reno, Nevada as a member of the Drive Unit Assembly team. Played a key role in maintaining, improving, and expanding manufacturing lines responsible for producing drive units (electric motors) for Tesla Models S, 3, X, and Y.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item timeline-inverted">
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2024-08-18%2011_24_20-Media%20Player.png"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 style="font-size: 15px;">FEB 2020 - SEP 2020</h4>
+                                    <h4 class="subheading" style="font-size: 20px;">UNCC - Research Engineer</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Collaborated with a postdoctoral researcher to design a scalable EV charging system that harnesses energy from light poles for Level 2 charging. Designed internal fixtures and mounts for electrical components, fabricated parts, developed the bill of materials, and presented the project to investors.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/DE.jpg"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 style="font-size: 15px;">MAY 2019 - AUG 2019</h4>
+                                    <h4 class="subheading" style="font-size: 20px;">Duke Energy- Reliability Engineer Intern</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Learned about power distribution and power grid reliability engineering. Led a project to eliminate labor costs and reduce data analysis time for power outage reports by 98% through the development of a web application. The application automates error evaluation in reports, leveraging Python to clean, analyze, and distribute data to a front end interface.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item timeline-inverted">
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2024-08-18%2011_22_47-Media%20Player.png"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 style="font-size: 15px;">AUG 2018 - DEC 2020</h4>
+                                    <h4 class="subheading" style="font-size: 20px;">UNCC - Teacher Assistant (TA)</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Assisted lectures for Introduction to Engineering and Engineering Design. Hosted sessions on integrating decision-making processes with engineering projects and provided lessons on web development (HTML, CSS) for students to utilize the platform to showcase their work.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/lynx-2.jpg"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 style="font-size: 15px;"><strong>MAY 2018 - AUG 2018</strong></h4>
+                                    <h4 class="subheading" style="font-size: 20px;"><strong>Optum - UI/UX Developer</strong></h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Designed the user interface for an iOS mobile application that offers emergency chatbot services using Swift. Developed foundational competencies in software engineering principles, including object-oriented programming, sorting algorithms, syntax, variables, and data structures.<br><br></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item timeline-inverted">
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/Scrum.jpg"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 style="font-size: 15px;"><strong>MAY 2017 - AUG 2017</strong></h4>
+                                    <h4 class="subheading" style="font-size: 20px;"><strong>Optum - SCRUM Lead</strong></h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Applied agile and lean methodologies to lead a team of software engineering interns. Conducted daily standup meetings, managed weekly sprints, delegated tasks, and guided business decisions to meet project deadlines. Our team successfully developed a revised user interface for Electronic Health Record (EHR) systems such as EPIC and Cerner.<br><br></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1602422889221.jpg"></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 style="font-size: 15px;">MAY 2016 - AUG 2016</h4>
+                                    <h4 class="subheading" style="font-size: 20px;">HNTB - Reliability Engineer Intern</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">My first internship was as a Reliability Engineer with a civil engineering firm. I worked on traffic analysis for HWY 450 near Raleigh, inspected interstates across NC, and published reports.&nbsp;</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item timeline-inverted">
+                            <div class="timeline-image" style="color: var(--bs-light-bg-subtle);background: rgb(54,134,254);">
+                                <h4>Normal<br>Human<br>Beginnings</h4>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </nav>
-    <div style="padding-top: 1%;">
+    </section>
+    <section class="bg-light" id="portfolio" style="padding-top: 50px;padding-bottom: 50px;">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h2 style="color: rgb(90,90,90);">About Me</h2>
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">PROJECTS</h2>
+                    <h3 class="text-muted section-subheading">Here, you'll find a curated selection of projects that showcase my expertise in mechanical design, software development, and manufacturing engineering. Each project demonstrates my passion for solving complex (fun) problems.&nbsp;</h3>
                 </div>
-                <div class="col-md-6 d-xl-flex justify-content-xl-end align-items-xl-center"><a href="https://www.linkedin.com/in/fvivongs" style="padding-left: 1%;padding-right: 1%;"><i class="fa fa-linkedin-square" data-bs-hover-animate="pulse" style="font-size: 40px;color: rgba(33,37,41,0.28);"></i></a><a href="https://github.com/fvivongsy"
-                        style="padding-left: 1%;padding-right: 1%;"><i class="fa fa-github" data-bs-hover-animate="pulse" style="font-size: 40px;color: rgba(33,37,41,0.28);"></i></a></div>
             </div>
-            <hr style="margin-top: -0.5px;">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#Modal-Time" data-bs-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/2024-08-25%2014_56_25-IMG_0456.HEIC.png">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>3D Timelapse</h4>
+                        <p class="text-muted">A New Perspective</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#Modal-OreaDipper" data-bs-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/IMG_0484.jpg">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Oreo Dipper</h4>
+                        <p class="text-muted">Just Having Fun</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#Modal-LoadCellTesting" data-bs-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/loadcell_img_Edit.png">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Loadcell Testing</h4>
+                        <p class="text-muted">Forces</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#Modal-LinearActuator" data-bs-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/LinCAD-3_Edit.png">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Linear Actuator</h4>
+                        <p class="text-muted">Traverse</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#Modal-EVChargingConcept" data-bs-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/EVCS_edit.png">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>EV Charging Concept</h4>
+                        <p class="text-muted">Pulling Power from Poles</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#Modal-Robotics" data-bs-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/JuniorDesign_Edit.png">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Robotics</h4>
+                        <p class="text-muted">Forkie</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#Modal-WindTurbine" data-bs-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/WindTurbine_Edit.png">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Wind Turbine Design</h4>
+                        <p class="text-muted">Clean Energy</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#Modal-AirEngine" data-bs-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/AirEngine_Edit.jpg">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Air Engine</h4>
+                        <p class="text-muted">Machining Components</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#Modal-InjectionMolding" data-bs-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/IJM_Edit.gif">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Injection Molding</h4>
+                        <p class="text-muted">Plastic Parts</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#Modal-FullStackDataApp" data-bs-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/DE-Diagram_Edit.jpg">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Full Stack Data App</h4>
+                        <p class="text-muted">Let's Code!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#portfolioModa-FRC" data-bs-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/2015%20Robot_Edit.jpg">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>FRC Robotics</h4>
+                        <p class="text-muted">Battle Bots "kinda"</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div>
+    </section>
+    <footer style="height: 60px;padding-bottom: 0px;padding-top: 10px;">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-xl-2 d-xl-flex justify-content-xl-start align-items-xl-center"><img class="border rounded-circle border-light" src="assets/img/Picture4.png" style="width: 100%;"></div>
-                <div class="col-md-6 col-xl-10 text-left d-xl-flex align-items-xl-center" style="color: rgb(90,90,90);">
-                    <div style="margin-top: 5px;">
-                        <p>A passion for building and pursuing new ways to build.<br></p>
-                        <p style="margin-top: -10px;">I like to...<br></p>
-                        <div class="d-xl-flex align-items-xl-center" style="margin-left: 3%;margin-top: -10px;">
-                            <ul class="list-unstyled">
-                                <li>🛠️ Create tools and processes for manufacturing.<br></li>
-                                <li>📐&nbsp;Design 3D models using Solidworks.<br></li>
-                                <li>🐍&nbsp;Code with Python.<br></li>
-                                <li>🏋️ Decompress by lifting heavy objects.&nbsp;<br></li>
-                            </ul>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"><span class="copyright">Copyright&nbsp;© Felix Vivongsy 2024</span></div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="Modal-Time">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">3d timelapse</h2>
+                                <p class="text-muted item-intro">I have to go to work, but I will have this page ready as soon as I can!</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/istockphoto-527660774-612x612.jpg"><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr>
         </div>
     </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="border rounded border-light" src="assets/img/JD.png" style="width: 100%;"></div>
-                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center"><img class="border rounded border-light" src="assets/img/Fanuc.png" style="width: 100%;"></div>
-                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center"><img class="border rounded border-light" src="assets/img/Cyber.png" style="width: 100%;"></div>
-                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="border rounded border-light" src="assets/img/sax.png" style="width: 100%;"></div>
-                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center"><img class="border rounded border-light" src="assets/img/Mentor.png" style="width: 100%;"></div>
-                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center"><img class="border rounded border-light" src="assets/img/DU.png" style="width: 100%;"></div>
-            </div>
-        </div>
-    </div>
-    <div class="container" id="experience" style="margin-top: 2%;">
-        <h2 style="color: rgb(90,90,90);">Experience</h2>
-        <hr>
-    </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-10" style="color: rgb(90,90,90);">
-                    <h3>Manufacturing Equipment Engineer, Tesla</h3>
-                    <p>(March 2021 - Present)</p>
-                    <p>Started my career as a member of the Final-Assembly Sustaining Team in Gigafactory 1 (GFNV) where I worked on designing tools, enclosures, fixtures, and OEE improvement projects.&nbsp;In addition to troubleshooting and maintaining
-                        the manufacturing lines, I also spearheaded multiple initiatives that improved the efficiency of our operations resulting in reduced cycle times, better safety, increased availability, and scrap reduction.<br><br>After a year,
-                        I relocated to Austin Texas to help with the Model-Y production ramp as an engineer on the Rotor team. Presently, I am responsible for overseeing the production and equipment of the die-cast machine as its equipment owner, while
-                        continuing to work on manufacturing OEE improvement projects.<br><br>Experience in...</p>
-                    <ul>
-                        <li>Designing new equipment features, hardware integrations, creating test procedures, and performing validations.</li>
-                        <li>Analyzing key performance indicators to facilicate OEE improvements&nbsp;and completing projects that improve line availability, performance, cycle times, and safety. <br></li>
-                        <li>Identifying and resolving open issues by working with vendors to validate machines, and unlocked equipment to meet cycle times. <br></li>
-                        <li>Root cause anaylsis and troubleshooting issues regarding equipment, programmable logic, and robots.&nbsp;<br></li>
-                        <li>Leading cross-functional teams to meet business needs and production goals.</li>
-                    </ul>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="Modal-OreaDipper">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">oreo dipper</h2>
+                                <p class="text-muted item-intro"><span style="color: rgb(33, 37, 41);">From noggin to robot fed Oreo in my mouth, this project only took me a few hours. Thank you SolidWorks, ChatGPT, and 3D Printing. </span><br><br><span style="color: rgb(33, 37, 41);">Backstory: instead of a static image, I wanted a cool video for the cover of this webpage. It was 6AM on a weekend</span>—<span style="color: rgb(33, 37, 41);">coffee mug in hand, craving a snack, and BAM</span>—<span style="color: rgb(33, 37, 41);">the Oreo Dipper was born.&nbsp;</span></p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/OreoDip.jpg">
+                                <p>Mint is my favorite Oreo flavor.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/elec.jpg"><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/button.jpg">
+                                <p>Supreme ergonomics. The dip button is strategically placed by the cup handle for immediate on-call dunking.&nbsp;</p>
+                                <ul class="list-unstyled">
+                                    <li><strong>COMPONENTS LISTS:</strong></li>
+                                    <li>Arduino UNO R3</li>
+                                    <li>MS18 Servo Motor</li>
+                                    <li>9V Battery</li>
+                                    <li>Limit Switch</li>
+                                    <li>Hardware and 3D Printed Components (PLA)</li>
+                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img src="assets/img/tesla-logo-2200x2800.png" style="width: 100%;"></div>
             </div>
         </div>
     </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-10" style="color: rgb(90,90,90);">
-                    <h3>University Research, UNCC</h3>
-                    <p>(March 2020 - September 2020)</p>
-                    <p>Designed commercial Electric Vehicle Charging Stations (EVCS) concept for Eaton Corporation and developed the first prototype of an on-campus charging station. Lead developments in Computer Aided Designs (CAD), NEMA and UL specifications
-                        implementations, injection mold analysis, finite element analysis (FEA), Bill of Materials (BOM), design review presentations, and building comprehensive design packages.&nbsp;<br></p>
-                    <ul>
-                        <li>Assembled prototypes.<br></li>
-                        <li>Sourced manufacturers to supply for an EVCS design.<br></li>
-                        <li>Fabricated parts by machining and 3D printing.</li>
-                        <li>Manufactured EV chargers that were installed at two parking lot locations.<br></li>
-                    </ul>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="Modal-LoadCellTesting">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">loadcell testing</h2>
+                                <p class="text-muted item-intro">I have to go to work, but I will have this page ready as soon as I can!</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/istockphoto-527660774-612x612.jpg"><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img src="assets/img/unc-charlotte.jpg" style="width: 100%;"></div>
             </div>
         </div>
     </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-10" style="color: rgb(90,90,90);">
-                    <h3>Reliability Engineer Internship, Duke Energy</h3>
-                    <p>(May 2019 - August 2019)</p>
-                    <p>Removed labor costs by reducing data analysis time for power outage reports by 98%. Achieved this by building a web-application <br>that evaluated errors in power outage documents, using Python to clean, evaluate, and distribute data
-                        to a front-end application. <br></p>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="Modal-LinearActuator">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Linear Actuator</h2>
+                                <p class="text-muted item-intro">I have to go to work, but I will have this page ready as soon as I can!</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/istockphoto-527660774-612x612.jpg"><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img src="assets/img/1200px-Duke_Energy_logo.svg.png" style="width: 100%;"></div>
             </div>
         </div>
     </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-10" style="color: rgb(90,90,90);">
-                    <h3>Software Engineer Internship, Optum (UnitedHealth Group)</h3>
-                    <p>(May 2017 - August 2018)</p>
-                    <p>Worked as a SCRUM Master, coordinating&nbsp;a team of developers to create a new UI/UX interface for medical records. The application would take JSON data from any existing software application and transfer it to a customizable user
-                        interface.&nbsp;<br><br>Later transitioned into a front-end developer role where I designed the user architecture for a mobile application, that allowed clients&nbsp;to interface with a virtual medical assistant.&nbsp;<br></p>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="Modal-EVChargingConcept">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">EV Charging Concept</h2>
+                                <p class="text-muted item-intro">I have to go to work, but I will have this page ready as soon as I can!</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/istockphoto-527660774-612x612.jpg"><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img src="assets/img/Optum-Logo.jpg" style="width: 100%;"></div>
             </div>
         </div>
     </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-10" style="color: rgb(90,90,90);">
-                    <h3>Civil Engineering Internship, HNTB</h3>
-                    <p>(May 2016 - August 2016)</p>
-                    <p>Evaluated traffic data from excel spreadsheets, generated future estimations of interstate traffic congestion and transposed the information onto diagrams, added to full reports. Performed roadway inspections, matched/updated intersection
-                        features with existing diagrams, logged detailed errors and automated reports based on observations. <br></p>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="Modal-Robotics">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">robotics</h2>
+                                <p class="text-muted item-intro">I have to go to work, but I will have this page ready as soon as I can!</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/istockphoto-527660774-612x612.jpg"><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img src="assets/img/HNTB_Logo.svg" style="width: 90%;"></div>
             </div>
         </div>
     </div>
-    <div style="color: rgb(90,90,90);">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-10">
-                    <h3>Teaching Assistant, UNCC</h3>
-                    <p>(August 2018 - May 2020)</p>
-                    <p>Hosted lectures on applying decision-making processes with engineering projects and gave lessons on web development (HTML, CSS) for students to use the platform to showcase their work. Mentored students during class lectures, proctored
-                        exams, graded assignments, and held office hours.<br></p>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="Modal-WindTurbine">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">wind turbine</h2>
+                                <p class="text-muted item-intro">I have to go to work, but I will have this page ready as soon as I can!</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/istockphoto-527660774-612x612.jpg"><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img src="assets/img/unc-charlotte.jpg" style="width: 100%;"></div>
             </div>
         </div>
     </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-10" style="color: rgb(90,90,90);margin-bottom: 3%;">
-                    <h3>Founder &amp; Engineering Lead, FRC Team 5518</h3>
-                    <p>(June 2014 - May 2017)</p>
-                    <p>Transformed a passion for engineering into an organization that advocates STEM education. First Robotics Competition (FRC) is an organization led by mentors and volunteers that host an annual event where students are challenged to
-                        build a robot in six weeks to compete at regional and international competitions.&nbsp;<br><br>Team 5518, the Techno Wolves, has won several regional awards and was qualified to compete in the world championship event during its
-                        second year. The organization which was founded in 2014 has helped hundreds of students exercise their creativity and apply engineering knowledge to real-world applications as the team continues to accomplish its goal of inspiring
-                        students to pursue STEM education and creating the future generation of engineers.&nbsp;<br><br>Click here to learn more about the team:&nbsp;<br></p><a class="btn btn-primary" role="button" href="http://www.technowolves.org/Home/">Visit Techno Wolves!</a></div>
-                <div
-                    class="col-md-6 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img src="assets/img/download%20(1).png" style="width: 100%;"></div>
-        </div>
-    </div>
-    </div>
-    <div class="container" id="projects" style="padding-top: 1%;">
-        <h2 style="color: rgb(90,90,90);">Projects</h2>
-        <hr>
-    </div>
-    <div style="margin-bottom: 2%;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-8" style="color: rgb(90,90,90);">
-                    <h3>Linear Actuator</h3>
-                    <p>Develop calculations that convert rotational movement to translational movement by defining the forces required to accelerate an object. Define minimum load and potential maximum load to select the correct motor for this task. Test
-                        mechanism and integrate safety features that restrict over travel.&nbsp;<br></p>
-                    <ul></ul><a class="btn btn-primary" role="button" href="linearactuator.html">View Project</a></div>
-                <div class="col-md-6 col-xl-4 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="border rounded border-light" src="assets/img/LinCAD-3.png" style="width: 100%;"></div>
-            </div>
-        </div>
-    </div>
-    <div style="margin-bottom: 2%;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-8" style="color: rgb(90,90,90);">
-                    <h3>Load Cell Testing</h3>
-                    <p>Demonstrate an understanding of the relationship between stepper motors, motor drivers and torque as it relates to the holding current of a Nema 17 stepper motor.<br></p>
-                    <ul>
-                        <li>Practice iterative design</li>
-                        <li>Create procedure, test, and analyze data</li>
-                        <li>Derive a conclusion based on findings</li>
-                    </ul><a class="btn btn-primary" role="button" href="loadcell.html">View Project</a></div>
-                <div class="col-md-6 col-xl-4 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="border rounded border-light" src="assets/img/loadcell_img-12.png" style="width: 100%;"></div>
-            </div>
-        </div>
-    </div>
-    <div style="margin-bottom: 2%;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-8" style="color: rgb(90,90,90);">
-                    <h3>EV Charging Concept Design</h3>
-                    <p>(2020)</p>
-                    <p>Developed a concept design for an EV charging station. Internal components included a 'smart' breaker that received a 240 volt power supply and could be controlled remotely through API commands from a program that was developed to
-                        monitor the system.&nbsp;</p>
-                    <ul>
-                        <li>Designed components to be UL Compliant&nbsp;</li>
-                        <li>Included drafts in part design to be enable injection mold fabrication</li>
-                        <li>Learned to design with surfaces in Solidworks</li>
-                    </ul>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="Modal-AirEngine">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">air engine</h2>
+                                <p class="text-muted item-intro">I have to go to work, but I will have this page ready as soon as I can!</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/istockphoto-527660774-612x612.jpg"><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-xl-4 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="border rounded border-light" src="assets/img/EVCS.png" style="width: 100%;"></div>
             </div>
         </div>
     </div>
-    <div style="margin-bottom: 2%;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-8" style="color: rgb(90,90,90);">
-                    <h3>Wind Turbine Design</h3>
-                    <p>(2020)</p>
-                    <p>For my Senior Design project, I worked on the calculations, design, and fabrication of a wind turbine. My objective was to optimize the parameters of different sub-assemblies for strength and efficiency (e.g. Encapsulate all critical
-                        components while reducing the front-facing area of the nacelle to minimize drag).&nbsp;<br></p>
-                    <ul>
-                        <li>Static and dynamic analysis for the structure and power generation components.</li>
-                        <li>Material selection based on minimum strength requirements and cost.</li>
-                        <li>Applied force calculations and constraints to select electrical and mechanical components.</li>
-                        <li>Learned about air foil design, applied lift/drag calculations, and design optimization.</li>
-                    </ul>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="Modal-InjectionMolding">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">injection molding</h2>
+                                <p class="text-muted item-intro">I have to go to work, but I will have this page ready as soon as I can!</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/istockphoto-527660774-612x612.jpg"><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-xl-4 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="border rounded border-light" src="assets/img/FinalWind-6.PNG" style="width: 100%;"></div>
             </div>
         </div>
     </div>
-    <div style="margin-bottom: 2%;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-8" style="color: rgb(90,90,90);">
-                    <h3>Injection Molding Machine</h3>
-                    <p>(2019)</p>
-                    <p>At the time, I was learning about plastics and castings. Interested in how the parts were manufactured, I thought it would be fun to design a machine that made small plastic parts. This is just an animation of the design, but during
-                        this process, I learned about the components of a die (ejection pins, mold cavity, cores, guide pins, etc.) and plastic part design.&nbsp;</p>
-                    <ul></ul>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="Modal-FullStackDataApp">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">FULL stack data application</h2>
+                                <p class="text-muted item-intro">I have to go to work, but I will have this page ready as soon as I can!</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/istockphoto-527660774-612x612.jpg"><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-xl-4 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="border rounded border-light" src="assets/img/IJM.gif" style="width: 100%;"></div>
             </div>
         </div>
     </div>
-    <div style="margin-bottom: 2%;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-8" style="color: rgb(90,90,90);">
-                    <h3>Robot Design</h3>
-                    <p>(2019)</p>
-                    <p>Junior Design is a university course at UNCC where students are given constraints and challenged to design a robot to compete with other teams. The primary objective was to design a robot that could traverse a complex terrain, retrieve
-                        an object that was suspended across a large opening on the field, and return it back to its original starting point. Success is based on the completion of the course in addition to the fastest time.</p>
-                    <ul>
-                        <li>Worked on&nbsp;3D CAD, fabrication, and the design.<br></li>
-                        <li>Did calculations and validations for the gripper/crane sub-assembly.<br></li>
-                        <li>Performed Finite Element Analysis (FEA) on the gripper arms to optimize part by reducing mass and maintaining the minimum strength of the component with the added payload.<br></li>
-                    </ul><a class="btn btn-primary" role="button" href="jdproject.html">View Project</a></div>
-                <div class="col-md-6 col-xl-4 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="border rounded border-light" src="assets/img/JuniorDesign.png" style="width: 100%;"></div>
-            </div>
-        </div>
-    </div>
-    <div style="margin-bottom: 2%;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-8" style="color: rgb(90,90,90);">
-                    <h3>Duke Energy Full Stack Data Application</h3>
-                    <p>(2019)</p>
-                    <p>Manual documentation is laborious and prone to potential human error, especially when the individual has to input dozens of parameters for a single power outage incident. During my time at the company, I developed a tool to review
-                        these documents and correct them within seconds, compared to the hours it took during the original practice of a manual audit.&nbsp;</p>
-                    <ul>
-                        <li>Researched the problem and gathered data on where the inefficiencies were present.<br></li>
-                        <li>Programmed back-end using Python.</li>
-                        <li>Used Flask, HTML, CSS and Bootstrap for the front-end application.<br></li>
-                    </ul><a class="btn btn-primary" role="button" href="ofutool.html">View Project</a></div>
-                <div class="col-md-6 col-xl-4 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="border rounded border-light" src="assets/img/DE-Diagram.jpg" style="width: 100%;"></div>
-            </div>
-        </div>
-    </div>
-    <div style="margin-bottom: 2%;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-8" style="color: rgb(90,90,90);">
-                    <h3>Air Engine</h3>
-                    <p>(2018)</p>
-                    <p>The Sophomore Design Air Engine Project from the University of North Carolina at Charlotte (UNCC) is an exciting project that challenges engineering students to design, build, and test a compressed air engine.<br></p>
-                    <ul>
-                        <li>Designed the engine using PTC Creo.<br></li>
-                        <li>Created drawings for components.<br></li>
-                        <li>Machined every component, assmebled, and tested.<br></li>
-                    </ul><a class="btn btn-primary" role="button" href="airengine.html">View Project</a></div>
-                <div class="col-md-6 col-xl-4 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="border rounded border-light" src="assets/img/AirEngine.PNG" style="width: 100%;"></div>
-            </div>
-        </div>
-    </div>
-    <div style="margin-bottom: 2%;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-8" style="color: rgb(90,90,90);">
-                    <h3>Drivetrain Design&nbsp;</h3>
-                    <p>(2018)</p>
-                    <p>This was a university project where students were assigned to design a mechanical assembly with a minimum of one degree of freedom. With my background in robotics, I decided to design a simple swerve drive mechanism. This assembly
-                        is comprised of two DC electric motors that dictate the rotational movement of the drive wheel as well as the yaw rotation of the wheel itself (z-axis rotation). In this project, I learned how to isolate and then evaluate different
-                        parts of the sub-assembly, and analyze the minimum deformation to select the optimal material and diameter of&nbsp;shaft components.<br></p><a class="btn btn-primary" role="button" href="https://webpages.charlotte.edu/fvivongs/megr2156.html"
-                        style="margin-bottom: 2%;">View Project</a></div>
-                <div class="col-md-6 col-xl-4 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="border rounded border-light" src="assets/img/2023-01-24%2006_31_44-website.png" style="width: 100%;"></div>
-            </div>
-        </div>
-    </div>
-    <div style="margin-bottom: 2%;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-8" style="color: rgb(90,90,90);">
-                    <h3>Mechanical Design (2016 FIRST Robotics Competition)</h3>
-                    <p>(2016)</p>
-                    <p>The 2016 FIRST Robotics Competition (FRC) season was themed 'Stronghold' and tasked teams with designing and building robots that could breach the defenses of a medieval-inspired castle. The robots had to be able to cross rough terrain,
-                        scale obstacles, and shoot a ball into a high goal. The competition also included a cooperative element, where teams could earn extra points by working together to reach a common objective. The 2016 FRC season had a total of 3,166
-                        teams competing in events across the world. The competition was designed to inspire students to pursue careers in STEM fields and to promote the ideals of gracious professionalism and teamwork as they compete in an exciting and
-                        challenging game.<br></p>
+    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModa-FRC">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">FRC Robotics</h2>
+                                <p class="text-muted item-intro">I have to go to work, but I will have this page ready as soon as I can!</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/istockphoto-527660774-612x612.jpg"><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-xl-4 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="border rounded border-light" src="assets/img/robot.png" style="width: 60%;/*transform: rotate(90deg);*/"></div>
             </div>
         </div>
     </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-8" style="color: rgb(90,90,90);">
-                    <h3>Mechanical Design (2015 FIRST Robotics Competition)</h3>
-                    <p>(2015)</p>
-                    <p>The 2015 FIRST Robotics Competition (FRC) season was themed 'Recycle Rush' and tasked teams with designing and building robots that could collect and sort recycling materials on a simulated landfill. The robots had to be able to pick
-                        up and stack totes, as well as place recycling cans and pool noodles on top of the stacks. The competition also included a coopertition element, where teams could earn extra points by working together to stack even higher. The
-                        2015 FRC season had a total of 2,939 teams competing in events across the world. With the goal of increasing awareness of recycling and environmental conservation, the competition was designed to inspire students to pursue careers
-                        in STEM fields and to promote the ideals of gracious professionalism.<br></p>
-                </div>
-                <div class="col-md-6 col-xl-4 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="border rounded border-light" src="assets/img/2015%20Robot.JPG" style="width: 100%;"></div>
-            </div>
-        </div>
-    </div>
-    <div class="container" id="certifications" style="margin-top: 2%;">
-        <h2 style="color: rgb(90,90,90);">Education</h2>
-        <hr>
-    </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-10" style="color: rgb(90,90,90);">
-                    <h3>University of North Carolina at Charlotte</h3>
-                    <p>Bachelor of Science in Mechanical Engineering (BSME)<br>2017-2020</p>
-                </div>
-                <div class="col-md-6 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img src="assets/img/unc-charlotte.jpg" style="width: 100%;"></div>
-            </div>
-        </div>
-    </div>
-    <div class="container" id="certifications-1" style="margin-top: 2%;">
-        <h2 style="color: rgb(90,90,90);">Certifications</h2>
-        <hr>
-    </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-10" style="color: rgb(90,90,90);">
-                    <h3>FANUC - Handling Tool Operation &amp; Programming</h3>
-                    <p>(2022)</p>
-                    <p>This course covers the Robot Operations outline intermixed with the tasks required to set up the HandlingTool application, test, run, and refine the program and production setup. The course outcomes include the following. Jogging the
-                        robot, executing teach pendant operations, setting Robot Payload, performing file and image backups, recovering program faults, creating TOOL, USER, and JOG Frames, executing production operations, editing programs, monitoring,
-                        forcing, and simulating input and output signals, programming branch instructions, programming position register instructions, and creating and executing Macros.&nbsp;<br></p>
-                </div>
-                <div class="col-md-6 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img src="assets/img/download.jpg" style="width: 100%;"></div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-10" style="color: rgb(90,90,90);">
-                    <h3>Cognex Vision - Advanced Spreadsheet</h3>
-                    <p>(2021)</p>
-                    <p>Cognex advanced training focuses on the depth of learning how to use the In-Sight Explorer spreadsheets interface. The outcomes of this course include the following. Configure PatMax (PatMax and PatMax RedLine) tools, execute edge
-                        and bead inspection tools to solve applications involving complex edges, analyze the results returned from the OCRMax tool, implement dialog boxes and wizards, audit messaging and test run functions into an application, identify
-                        applications for the flaw detection tools,&nbsp; and explain how values are passed from a spreadsheet to a JavaScript program.&nbsp;<br></p>
-                </div>
-                <div class="col-md-6 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img src="assets/img/2023-01-21%2009_19_33-cognex%20logo%20-%20Google%20Search.png" style="width: 100%;"></div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xl-10" style="color: rgb(90,90,90);">
-                    <h3>Cognex Vision - Standard Spreadsheet</h3>
-                    <p>(2021)</p>
-                    <p>In-Sight Spreadsheets Standard training provides an overview of the hardware and software used by In-Sight vision systems. With the focus on getting the most from the In-Sight Explorer Spreadsheets interface, users learn how to walk
-                        through the process of setting up a vision application using spreadsheet programming best practices. The outcomes of this course include identifying In-Sight hardware and software interface components, demonstrating skillful use
-                        of the spreadsheet interface and vision tools, building starter operator interfaces, and learning the fundamentals of lighting and optics.&nbsp;<br></p>
-                </div>
-                <div class="col-md-6 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img src="assets/img/cognex_logo_1200.webp" style="width: 100%;"></div>
-            </div>
-        </div>
-    </div>
-    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/agency.js"></script>
 </body>
 
 </html>
